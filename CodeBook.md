@@ -1,6 +1,6 @@
 # Code Book
 
-The data set was retrieved [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). Further information about this data set can be obtained in this [website.](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+The dataset was retrieved [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). Further information about this data set can be obtained in this [website.](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ## Variables and data description
 
@@ -32,3 +32,13 @@ These signals were used to estimate variables of the feature vector for each pat
     + fBodyGyroJerkMag
 
 ## Work performed to clean the data
+
+1. Step 1: Unzip and read the [raw data set.](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+2. Step 2: Select and read the data files of interest (X_train.txt, y_train.txt, subject_train.txt, X_test.txt, y_test.txt, subject_test.txt)
+3. Step 3: Use the "features.txt" file in order to label X_train.txt and X_test.txt datasets' columns.
+4. Step 4: Label y_train.txt and y_test.txt (single column datasets) as "Label"
+5. Step 5: Label subject_train.txt and subject_test.txt (single column datasets) as "Subject" 
+6. Step 6: Cbind /test datasets.
+7. Step 7: Cbind /train datasets.
+8. Step 8: Merge /test (Step 6) and /train (Step 7) datasets using rbind(...) function.
+9. Step 9: Create a independent tidy data set with the average of each variable for each activity and each subject.
