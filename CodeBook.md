@@ -41,4 +41,5 @@ These signals were used to estimate variables of the feature vector for each pat
 6. Step 6: Cbind /test datasets.
 7. Step 7: Cbind /train datasets.
 8. Step 8: Merge /test (Step 6) and /train (Step 7) datasets using rbind(...) function.
-9. Step 9: Create a independent tidy data set with the average of each variable for each activity and each subject.
+9. Step 9: Extract only the measurements on the mean and standard deviation for each measurement (Check "Variables and data description" section).
+10. Step 10: Create a independent tidy data set with the average of each variable for each activity and each subject.
