@@ -1,5 +1,5 @@
 # Getting-and-Cleaning-Data-Course-Project
-## How all of the scripts work?
+## How does the script work?
 
 1. First of all it's a MUST to download the raw data set available [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) into the  working directory, to make sure that this code works properly.
 2. "reshape2" library is required. For this reason, download this library and initilize it writing: library(reshape2)
