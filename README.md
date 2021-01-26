@@ -14,4 +14,4 @@
 11. By using the column names and taking advantage of the grepl(...) function, the code extracts only the measurements on the mean and standard deviation for each measurement.
 12. After analyzing "activity_labels.txt" and using the factor(...) function, the code adds a new column to the data frame obtained after[11] labeled as "descriptive.Label" in order to use descriptive activity names to name the activities in the data set.
 13. From the data set in step [12], the code creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-14. Finally, a .txt file containing the new tidy dataset is created
+14. Finally, a .txt file containing the new tidy dataset is created.
